@@ -1,0 +1,189 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	
+	funcao inicio()
+	{
+		inteiro atividade
+		inteiro letra
+		inteiro idade
+		real LA
+		real LB
+		real LC
+		
+		escreva("Qual atividade você quer ver?")
+		leia(atividade)
+		limpa()
+
+		escolha(atividade)
+		{
+			caso 1:
+			
+			escreva("Qual letra você quer?(escreva em numero representando sua ordem no alfabeto)")
+			leia(letra)
+			limpa()
+			escolha(letra){
+				caso 1:
+				escreva("Um ano tem ", 365 * 24, " horas.")
+				pare
+
+				caso 2:
+				escreva("Uma década tem ", 365 * 24 * 60 * 10, " minutos.")
+				pare
+
+				caso 3:
+				escreva("Quantos anos você tem?")
+				inteiro anos
+				leia(anos)
+				limpa()
+				escreva("Você tem ", anos * 365 * 24 * 60 * 60, " segundos.")
+				pare
+
+				caso 4:
+				escreva("Quantos chocolates você pretende comer na vida?")
+				inteiro chocolates
+				leia(chocolates)
+				limpa()
+				escreva("Você quer comer ", chocolates, " chocolates na vida")
+				pare
+
+				caso 5:
+				escreva("Se sua idade é de 977 milhões de segundos, você tem ", 977000000 / 60 / 60 / 24 / 365, " anos")
+				pare
+
+			}
+		     pare
+		
+		     caso 2:
+		     escreva("Qual letra você quer?(escreva em numero representando sua ordem no alfabeto)")
+		     leia(letra)
+		     limpa()
+		     escolha(letra){
+		     	caso 1:
+		     	escreva("Se sua idade é de 977 milhões de segundos, você tem ", 977000000 / 60 / 60 / 24 / 88, " anos")
+		     	pare
+
+		     	caso 2:
+		     	inteiro planeta
+
+		     	escreva("Quantos anos você tem?")
+		     	leia(idade)
+		     	escreva("Qual planeta você quer?(coloque em número baseado de mais perto até mais longe do sol")
+		     	leia(planeta)
+
+		     	escolha(planeta){
+		     		caso 1:
+		     		escreva("Você teria ", idade * 0.2408467, " anos em Mercúrio")
+		     		pare
+
+		     		caso 2:
+		     		escreva("Você teria ", idade * 0.61519726, " anos em Vênus")
+		     		pare
+
+		     		caso 3:
+		     		escreva("Você teria ", idade * 1, " anos na Terra")
+		     		pare
+
+		     		caso 4:
+		     		escreva("Você teria ", idade * 1.8808158, " anos em Marte")
+		     		pare
+
+		     		caso 5:
+		     		escreva("Você teria ", idade * 11.862615, " anos em Júpiter")
+		     		pare
+
+		     		caso 6:
+		     		escreva("Você teria ", idade * 84.016846, " anos em Urano")
+		     		pare
+
+		     		caso 7:
+		     		escreva("Você teria ", idade * 164.79132, " anos em Netuno")
+		     		pare
+		     	}
+		     	
+		     }
+		     pare
+
+		     caso 3:
+		     escreva("O aluno precisará dedicar ", 1.66 / 6, " e terá ", 24 -1.66 / 6, " horas de tempo livre(tirando a escola)")
+		     pare
+
+		     caso 4:
+		     inteiro mad3 = 300
+		     inteiro mad4 = 400
+		     inteiro mad5 = 500
+		     escreva("Com a tábua de 3 metros, ele poderá cortar ", mad3 / 45, " pedaços e sobrará ", mad3 % 45, "cm. \n Com a tábua de 4 metros, ele poderá cortar ", mad4 / 45, " pedaços e sobrará ", mad4 % 45, "cm. \n Com a tábua de 5 metros, ele poderá cortar ", mad5 / 45, " pedaços e sobrará ", mad5 % 45, "cm.")
+		     pare
+
+		     caso 5:
+		     escreva("Qual letra você quer?(escreva em numero representando sua ordem no alfabeto)")
+			leia(letra)
+			limpa()
+			escolha(letra){
+			
+				caso 1:
+				LB = 11.5 * 11.5
+				LC = 6.3 * 6.3
+
+				LA = LB * LC
+				LA = m.raiz(LA, 2)
+
+				escreva("Ele precisa de ", LA, "m de fio")
+				pare
+
+				caso 2:
+				
+
+				escreva("Qual o lado maior?")
+				leia(LB)
+				escreva("Qual o lado menor?")
+				leia(LC)
+
+				LA = LB * LC
+				LA = m.raiz(LA, 2)
+
+				escreva("Ele precisa de ", LA, "m de fio")
+				pare
+			}
+			pare
+
+			caso 6:
+			escreva("Ele passa ", 312 * 5 / 60, " Horas lendo livros np ano")
+			pare
+
+			caso 7:
+			escreva("Qual sua idade?")
+			leia(idade)
+			limpa()
+			inteiro idade2 = idade
+
+			enquanto(idade2 > 0){
+				idade2--
+				idade = idade + idade2
+			}escreva(idade)
+			pare
+
+			caso 8:
+			real tamanhoMb
+			real mbps
+
+			escreva("Qual o tamanho do arquivo?")
+			leia(tamanhoMb)
+			limpa()
+			escreva("Qual a velocidade da sua internet(em MegaBytes)")
+			leia(mbps)
+			limpa()
+
+			escreva("Este arquivo vai demorar ", tamanhoMb / (mbps * 60), " minutos para baixar")
+			pare
+
+			caso 9:
+			inteiro area
+			escreva("Qual a área do terreno que quer pintar?")
+			leia(area)
+			limpa()
+			escreva("Você iŕa precisar de ", area / 3, "litros de tinta e ", area / 18 * 480, " reais")
+			
+		}	
+	}
+}
